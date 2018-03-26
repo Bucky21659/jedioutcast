@@ -588,7 +588,7 @@ static cvarTable_t cvarTable[] = { // bk001129
 	{ &cg_singlePlayerActive, "ui_singlePlayerActive", "0", CVAR_USERINFO},
 	{ &cg_recordSPDemo, "ui_recordSPDemo", "0", CVAR_ARCHIVE},
 	{ &cg_recordSPDemoName, "ui_recordSPDemoName", "", CVAR_ARCHIVE},
-	{ &cg_hudFiles, "cg_hudFiles", "ui/hud.txt", CVAR_ARCHIVE},
+	{ &cg_hudFiles, "cg_hudFiles", "ui/jk2hud.txt", CVAR_ARCHIVE},
 
 	{ &cg_cameraOrbit, "cg_cameraOrbit", "0", CVAR_CHEAT},
 	{ &cg_cameraOrbitDelay, "cg_cameraOrbitDelay", "50", CVAR_ARCHIVE},
@@ -1848,7 +1848,7 @@ void CG_LoadMenus(const char *menuFile) {
 	if ( !f ) {
 		// do NOT do this, or it doesn't get a chance to look at the default menu below -ste
 		//trap_Error( va( S_COLOR_YELLOW "menu file not found: %s, using default\n", menuFile ) );
-		len = trap_FS_FOpenFile( "ui/hud.txt", &f, FS_READ );
+		len = trap_FS_FOpenFile( "ui/jk2hud.txt", &f, FS_READ );
 		if (!f) {
 			trap_Error( va( S_COLOR_RED "default menu file not found: ui/hud.txt, unable to continue!\n", menuFile ) );
 		}
@@ -2215,7 +2215,7 @@ void CG_LoadHudMenu() {
 	trap_Cvar_VariableStringBuffer("cg_hudFiles", buff, sizeof(buff));
 	hudSet = buff;
 	if (hudSet[0] == '\0') {
-		hudSet = "ui/hud.txt";
+		hudSet = "ui/jk2hud.txt";
 	}
 
 	CG_LoadMenus(hudSet);

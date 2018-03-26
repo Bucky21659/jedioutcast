@@ -116,7 +116,7 @@ BSC32=bscmake.exe
 LINK32=link.exe
 # ADD BASE LINK32 advapi32.lib winmm.lib wsock32.lib kernel32.lib user32.lib gdi32.lib ole32.lib /nologo /stack:0x800000 /subsystem:windows /map:"Release/jk2mp.map" /debug /machine:I386 /out:".\Release/jk2mp.exe"
 # SUBTRACT BASE LINK32 /pdb:none
-# ADD LINK32 advapi32.lib winmm.lib wsock32.lib kernel32.lib user32.lib gdi32.lib ole32.lib /nologo /stack:0x800000 /subsystem:windows /map:"Final/jk2mp.map" /machine:I386
+# ADD LINK32 advapi32.lib winmm.lib wsock32.lib kernel32.lib user32.lib gdi32.lib ole32.lib /nologo /stack:0x800000 /subsystem:windows /map:"Final/jk2mp.map" /machine:I386 /out:".\Final/../jk2mp.exe"
 # SUBTRACT LINK32 /pdb:none /debug
 
 !ENDIF 

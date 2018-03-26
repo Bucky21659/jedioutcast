@@ -189,11 +189,11 @@ void S_Init( void ) {
 
 	Com_Printf("\n------- sound initialization -------\n");
 
-	s_volume = Cvar_Get ("s_volume", "0.8", CVAR_ARCHIVE);
-	s_musicVolume = Cvar_Get ("s_musicvolume", "0.25", CVAR_ARCHIVE);
+	s_volume = Cvar_Get ("s_volume", "0.42", CVAR_ARCHIVE);
+	s_musicVolume = Cvar_Get ("s_musicvolume", "0.125", CVAR_ARCHIVE);
 	s_separation = Cvar_Get ("s_separation", "0.5", CVAR_ARCHIVE);
 	s_doppler = Cvar_Get ("s_doppler", "1", CVAR_ARCHIVE);
-	s_khz = Cvar_Get ("s_khz", "22", CVAR_ARCHIVE);
+	s_khz = Cvar_Get ("s_khz", "44", CVAR_ARCHIVE);
 	s_mixahead = Cvar_Get ("s_mixahead", "0.2", CVAR_ARCHIVE);
 
 	s_mixPreStep = Cvar_Get ("s_mixPreStep", "0.05", CVAR_ARCHIVE);
@@ -264,7 +264,7 @@ channel_t*	S_ChannelMalloc() {
 	return v;
 }
 
-void S_ChannelSetup() {
+void S_ChannelSetup() { //this gets raped before map load
 	channel_t *p, *q;
 
 	// clear all the sounds so they don't

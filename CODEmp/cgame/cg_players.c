@@ -643,7 +643,8 @@ void CG_LoadClientInfo( clientInfo_t *ci ) {
 			}
 		} else {
 			if ( !CG_RegisterClientModelname( ci, DEFAULT_MODEL, "default", DEFAULT_MODEL, "default", teamname, -1 ) ) {
-				CG_Error( "DEFAULT_MODEL (%s) failed to register", DEFAULT_MODEL );
+				//CG_Error( "DEFAULT_MODEL (%s) failed to register", DEFAULT_MODEL );
+				Com_Printf( "DEFAULT_MODEL (%s) failed to register\n", DEFAULT_MODEL );
 			}
 		}
 		modelloaded = qfalse;

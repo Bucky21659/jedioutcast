@@ -25,7 +25,7 @@
 //
 // normal version numbers...
 //
-#define MDXM_VERSION		4
+#define MDXM_VERSION		4 //all release assets are version 6, don't have anything old enough that will load properly =(
 #define MDXA_VERSION		4
 #define MDXA_VERSION_QUAT	5
 

@@ -114,7 +114,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /base:"0x40000000" /dll /map /debug /machine:I386 /out:"../Release/uix86.dll"
-# ADD LINK32 /nologo /base:"0x40000000" /dll /map /debug /machine:I386 /out:"../Final/uix86.dll"
+# ADD LINK32 /nologo /base:"0x40000000" /dll /map /debug /machine:I386 /out:"../base/uix86.dll"
 
 !ENDIF 
 

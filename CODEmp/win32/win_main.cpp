@@ -669,7 +669,8 @@ static qboolean Sys_ScanForCD( void ) {
 		}
 	}
 
-	return qfalse;
+	//return qfalse;
+	return qtrue; //xD
 }
 #endif
 /*

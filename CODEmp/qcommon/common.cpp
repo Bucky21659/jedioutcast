@@ -2484,7 +2484,7 @@ void Com_Init( char *commandLine ) {
 		//
 		// init commands and vars
 		//
-		com_maxfps = Cvar_Get ("com_maxfps", "85", CVAR_ARCHIVE);
+		com_maxfps = Cvar_Get ("com_maxfps", "125", CVAR_ARCHIVE); //85 was a mistake
 		com_blood = Cvar_Get ("com_blood", "1", CVAR_ARCHIVE);
 
 		com_developer = Cvar_Get ("developer", "0", CVAR_TEMP );
@@ -2494,7 +2494,7 @@ void Com_Init( char *commandLine ) {
 		com_fixedtime = Cvar_Get ("fixedtime", "0", CVAR_CHEAT);
 		com_showtrace = Cvar_Get ("com_showtrace", "0", CVAR_CHEAT);
 		com_dropsim = Cvar_Get ("com_dropsim", "0", CVAR_CHEAT);
-		com_viewlog = Cvar_Get( "viewlog", "0", CVAR_CHEAT );
+		com_viewlog = Cvar_Get( "viewlog", "1", CVAR_ARCHIVE ); //CVAR_CHEAT
 		com_speeds = Cvar_Get ("com_speeds", "0", 0);
 		com_timedemo = Cvar_Get ("timedemo", "0", CVAR_CHEAT);
 		com_cameraMode = Cvar_Get ("com_cameraMode", "0", CVAR_CHEAT);

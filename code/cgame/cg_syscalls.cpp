@@ -506,7 +506,7 @@ int cgi_UI_GetItemText(char *menuFile,char *itemName, char* text)
 
 int cgi_SP_Register(const char *text, qboolean persist )
 {
-	syscall( CG_SP_REGISTER, text, persist );
+	return syscall( CG_SP_REGISTER, text, persist );
 }
 
 int cgi_SP_GetStringTextString(const char *text, char *buffer, int bufferLength)

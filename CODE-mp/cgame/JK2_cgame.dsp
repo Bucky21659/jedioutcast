@@ -114,7 +114,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /base:"0x30000000" /subsystem:windows /dll /map /machine:I386 /def:".\JK2_cgame.def" /out:"../Final/cgamex86.dll"
-# ADD LINK32 /nologo /base:"0x30000000" /subsystem:windows /dll /map /machine:I386 /def:".\JK2_cgame.def" /out:"../Final/cgamex86.dll"
+# ADD LINK32 /nologo /base:"0x30000000" /subsystem:windows /dll /map /machine:I386 /def:".\JK2_cgame.def" /out:"../base/cgamex86.dll"
 
 !ENDIF 
 

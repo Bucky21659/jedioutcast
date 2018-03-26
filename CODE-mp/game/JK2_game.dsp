@@ -116,7 +116,7 @@ BSC32=bscmake.exe
 LINK32=link.exe
 # ADD BASE LINK32 kernel32.lib user32.lib winmm.lib /nologo /base:"0x20000000" /subsystem:windows /dll /map /debug /machine:I386 /def:".\JK2_game.def" /out:"../../Release/jk2mpgamex86.dll"
 # SUBTRACT BASE LINK32 /pdb:none
-# ADD LINK32 kernel32.lib user32.lib winmm.lib /nologo /base:"0x20000000" /subsystem:windows /dll /map /machine:I386 /def:".\JK2_game.def" /out:"../Final/jk2mpgamex86.dll"
+# ADD LINK32 kernel32.lib user32.lib winmm.lib /nologo /base:"0x20000000" /subsystem:windows /dll /map /machine:I386 /def:".\JK2_game.def" /out:"../base/jk2mpgamex86.dll"
 # SUBTRACT LINK32 /pdb:none /debug
 
 !ENDIF 
